@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import photo from './myImg/photo.png';
 
 function About() {
     return (
@@ -12,7 +13,7 @@ function About() {
                 <div className='spanbox'><a href="#"><span>Learn more</span></a></div>
             </div>
             <div className='imgBox'>
-                <img src="myImg.png" alt="" />
+                <img src={photo} alt="" />
             </div>
         </div>
     )

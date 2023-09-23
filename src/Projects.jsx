@@ -1,23 +1,26 @@
 import React from 'react';
 import './App.css';
+import formImg from './myImg/formImg.png';
+import tableImg from './myImg/tableImg.png';
+import zeptoImg from './myImg/zeptoImg.png';
 
 const projectData = [
     {
         id: 1,
         name: "Form-Validation",
-        imgUrl: "formImg.png",
+        imgUrl: formImg,
         text: "A Multi Step form that displays entered details when filled out.",
     },
     {
         id: 2,
         name: "Zepto-Clone",
-        imgUrl: "formImg.png",
+        imgUrl: zeptoImg,
         text: "A website with rendering based on search and cart functionality.",
     },
     {
         id: 3,
         name: "Grid-Table",
-        imgUrl: "formImg.png",
+        imgUrl: tableImg,
         text: "A table with CRUD functionality, sorting, and pagination.",
     },
 ]
