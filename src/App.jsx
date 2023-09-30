@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Navbar from "./Navbar";
 import About from "./About";
@@ -11,7 +11,7 @@ import Footer from './Footer';
 function App() {
 
   return (
-    <main className='mainContainer'>
+    <main className='mainContainer' id='MainContainer'>
       <Navbar />
       <About />
       <Skills />

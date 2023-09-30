@@ -12,62 +12,84 @@
   font-size: 17px;
 }
 .mainContainer button:hover {
-  background-color: #fff;
+  background-color: #fcf4f4;
   border: 2px solid #ec5b53;
   color: #ec5b53;
   cursor: pointer;
 }
-.navbar {
+.mainContainer {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+ }
+ .mainContainer .navbar {
   background-color: #fefafa;
-  position: fixed;
+  position: sticky;
+  top: 0;
+  left: 0;
   width: 100%;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-}
-.navbar ul {
+  padding: .5rem 10%;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+ }
+ .list {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+ ul {
+  display: flex;
+  margin-right: 8rem;
+ }
+ ul li {
+  margin-left: 2.5rem;
   list-style: none;
-}
-.navbar ul li{
-  margin: 0 20px;
-  font-size: 20px;
-}
-.navbar ul li a{
-  text-decoration: none;
-  color: black;
-}
-.navbar ul li a:hover {
-  color: #ec5b53;
   cursor: pointer;
-}
+ }
+ ul li:hover {
+  color: #ec5b53;
+ }
+ .icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+ }
 
 
-.about {
+ .about {
   display: flex;
   align-items: center;
   background-color: #fefafa;
-  justify-content: space-around;
+  justify-content: center;
+  width: 100%;
+  padding: 0 10rem;
 }
 .about .aboutbox {
-  width: 700px;
-  padding: 20px;
-  margin-left: 60px;
-  margin-top: 150px;
+  width: 100%;
+  padding: 1rem;
+  padding-top: 6rem;
+  margin-left: 5rem;
 }
 .aboutbox .heading {
   margin-bottom: 30px;
+  width: 100%;
 }
 .aboutbox .heading h1 {
   color: #002d5b;
   line-height: 70px;
-  font-size: 60px;
+  font-size: 4rem;
 }
 .aboutbox .para {
   color: #7A7A7A;
   line-height: 24px;
-  width: 500px;
+  width: 100%;
   margin-bottom: 50px;
   font-size: 20px;
 }
@@ -88,59 +110,66 @@
   color: #ec5b53;
   cursor: pointer;
 }
+.about .imgBox {
+  width: 100%;
+  /* border: solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .imgBox img {
-  margin-bottom: 150px;
-  margin-right: 100px;
+  margin-bottom: 15rem;
   width: 450px;
-  height: 450px;  
+  height: 460px;  
 }
 
 .skills {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .skills .mySkill{
-  width: 400px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 40px;
-  margin-left: 50px;
-  height: 400px;
+  height: 20rem;
 }
 .skills .mySkill h1 {
   color: #002d5b;
-  font-size: 40px;
+  font-size: 2.8rem;
 }
 .skills .mySkill p {
   font-size: 20px;
   margin-top: 20px;
 }
-.mySkill .myDiv {
+.mySkill .myNewDiv {
   background-color: #ec5b53;
   width: 150px;
   height: 3px;
   margin-top: 40px;
 }
 .skills .skillImg{
-  width: 400px;
-  height: 400px;
-  margin-top: 40px;
-  margin-right: 50px;
+  width: 100%;
+  height: 20rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 .skillImg div {
-  width: 120px;
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
 }
 .skillImg div:hover {
   transform: scale(1.2);
 }
-
 
 .projects {
   display: flex;
@@ -148,19 +177,19 @@
   align-items: center;
   flex-direction: column;
   background-color: #fefafa;
-  margin-top: 20px;
+  margin-top: 2rem;
+  width: 100%;
 }
 .projects .myProject{
-  width: 1000px;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 70px;
 }
 .projects .myProject h1 {
   color: #002d5b;
-  font-size: 40px;
+  font-size: 2.8rem;
 }
 .projects .myProject p {
   font-size: 20px;
@@ -176,10 +205,10 @@
   display: flex;
   margin-top: 30px;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
-.projectsBox .project {
-  /* border: 2px solid #ec5b53; */
-  background-color: #fff;
+.projectsBox .project { 
+   background-color: #fff;
   box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.5);
   width: 250px;
   height: 400px;
@@ -216,34 +245,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 3rem;
+  padding: 1rem;
 }
 .contacts .myContacts {
-  margin-right: 50px;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .contacts .myContacts h1 {
   color: #002d5b;
-  font-size: 50px;
+  font-size: 2.8rem;
 }
 .contacts .myContacts .myDiv {
   background-color: #ec5b53;
   width: 150px;
   height: 3px;
   margin-top: 20px;
-  margin-left: 60px;
 }
 .contacts .contactsInput {
-  margin-left: 50px;
+  margin-left: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 500px;
+  width: 25rem;
 }
 .contacts .contactsInput input {
   width: 100%;
-  height: 60px;
-  margin: 10px;
+  height: 3.5rem;
+  margin: .5rem;
   border-radius: 10px;
   padding: 0 20px;
   font-size: 20px;
@@ -252,20 +285,23 @@
 }
 .contacts .contactsInput textarea {
   width: 100%;
-  height: 150px;
+  height: 130px;
   margin: 10px;
   border-radius: 10px;
   padding: 10px 20px;
   font-size: 20px;
 }
-.contactsInput .myBtn {
-  margin-top: 20px;
+.contactsInput .sendBtn {
+  background-color: #ec5b53;
+  border: none;
+  outline: none;
+  color: #fff;
 }
 
 
 .footer {
-  margin-top: 50px;
-  height: 250px;
+  margin-top: 2rem;
+  height: 18rem;
   width: 100%;
   background-color: #002d5b;
 }
@@ -273,8 +309,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 100px;
-  height: 150px;
+  margin-top: 4rem;
   color: #fff;
   font-size: 30px;
 }
@@ -284,10 +319,144 @@
   width: 2rem;
 }
 .footer .footerEnd {
-  margin-top: 20px;
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
+
+
+
+ @media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 10%;
+    flex-direction: column;
+  }
+  .list {
+    font-size: 1.3rem;
+   }
+   ul {
+    margin: .5rem 0;
+  }
+  ul li {
+    margin-left: 1.5rem;
+  }
+  .list button {
+    margin-left: 2rem;
+    margin-top: .5rem;
+  } 
+
+  .about {
+    flex-direction: column;
+    padding: 0;
+  }
+  .about .aboutbox {
+    margin: 0;
+    width: 100%;
+    padding: 1rem;
+    padding-top: 3rem;
+    margin-left: 0;
+  }
+  .aboutbox .heading {
+    margin-bottom: 20px;
+  }
+  .aboutbox .heading h1 {
+    line-height: 50px;
+    font-size: 2.8rem;
+  }
+  .aboutbox .para {
+    font-size: 1.05rem;
+  }
+  .about .imgBox {
+    height: 25rem;
+  }
+  .imgBox img {
+    margin-bottom: 15rem;
+    width: 450px;
+    height: 460px;  
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+  .skills .mySkill{
+    width: 100%;
+    height: 10rem;
+  }
+  .skills .mySkill h1 {
+    font-size: 2rem;
+  }
+  .skills .mySkill p {
+    font-size: 1.1rem;
+    margin-top: .8rem;
+  }
+  .mySkill .myNewDiv {
+    width: 8rem;
+    margin-top: 1.5rem;
+  }
+  .skills .skillImg{
+    height: 18rem;
+  }
+  .skillImg div {
+    margin-left: 0;
+  }
+
+
+  .projects .myProject h1 {
+    color: #002d5b;
+    font-size: 2rem;
+  }
+  .projects .myProject p {
+    font-size: 1.1rem;
+    margin-top: .8rem;
+  }
+  .projects .myProject .myDiv {
+    width: 8rem;
+  }
+
+  .contacts {
+    flex-direction: column;
+  }
+  .contacts .myContacts {
+    margin-right: 0;
+  }
+  .contacts .myContacts h1 {
+    font-size: 2rem;
+  }
+  .contacts .myContacts .myDiv {
+    width: 8rem;
+    margin-top: 1rem;
+  }
+  .contacts .contactsInput {
+    margin-left: 0;
+    width: 16rem;
+    margin-top: 1rem;
+  }
+  .contacts .contactsInput input {
+    height: 2.8rem;
+    font-size: 16px;
+  }
+  .contacts .contactsInput textarea {
+    height: 90px;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  
+.footer {
+  height: 18rem;
+}
+.footer .myFooter {
+  flex-direction: column;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+.footer .footerEnd {
+  margin-top: 4rem;
+  font-size: .8rem;
+}
+ }

@@ -10,18 +10,25 @@ const projectData = [
         name: "Form-Validation",
         imgUrl: formImg,
         text: "A Multi Step form that displays entered details when filled out.",
+        github: "https://github.com/Rathi25sept/FormValidation",
+        livedemo: "https://form-validation-one-gray.vercel.app/"
     },
     {
         id: 2,
         name: "Zepto-Clone",
         imgUrl: zeptoImg,
         text: "A website with rendering based on search and cart functionality.",
+        github: "https://github.com/Rathi25sept/ZeptoClone",
+        livedemo: "https://zepto-clone.vercel.app/"
     },
     {
         id: 3,
         name: "Grid-Table",
         imgUrl: tableImg,
         text: "A table with CRUD functionality, sorting, and pagination.",
+        github: "https://github.com/Rathi25sept/Grid-Table",
+        livedemo: "https://my-grid-table.vercel.app/"
+        
     },
 ]
 
@@ -34,8 +41,8 @@ function Projects() {
             <h2> {item.name} </h2>
             <p> {item.text} </p>
             <div className='demoBtn'>
-                <a href="#"><button>Github</button></a>
-                <a href="#"><button>Demo</button></a>
+                <a href = {item.github}><button>Github</button></a>
+                <a href={item.livedemo}><button>Demo</button></a>
             </div>
         </div>
     })

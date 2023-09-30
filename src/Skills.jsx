@@ -45,13 +45,13 @@ function Skills() {
     return (
         <div className='skills' id='Skills'>
 
-            <div className='skillImg'>{renderData}</div>
-
             <div className='mySkill'>
                 <h1>My Skill</h1>
                 <p>Hello I'am Web Developer. My Skills are...</p>
-                <div className='myDiv'></div>
+                <div className='myNewDiv'></div>
             </div>
+
+            <div className='skillImg'>{renderData}</div>
             
         </div>
     )
