@@ -3,6 +3,7 @@ import './App.css';
 import formImg from './myImg/formImg.png';
 import tableImg from './myImg/tableImg.png';
 import zeptoImg from './myImg/zeptoImg.png';
+import dashboardImg from './myImg/dashboardImg.png';
 
 const projectData = [
     {
@@ -30,6 +31,15 @@ const projectData = [
         livedemo: "https://my-grid-table.vercel.app/"
         
     },
+    {
+        id: 3,
+        name: "Dashboard",
+        imgUrl: dashboardImg,
+        text: "A dashboard with dynamic table.",
+        github: "https://github.com/Rathi25sept/Dashboard",
+        livedemo: "https://dashboard-eta-five-21.vercel.app/"
+        
+    },
 ]
 
 
@@ -41,8 +51,8 @@ function Projects() {
             <h2> {item.name} </h2>
             <p> {item.text} </p>
             <div className='demoBtn'>
-                <a href = {item.github}><button>Github</button></a>
-                <a href={item.livedemo}><button>Demo</button></a>
+                <a href = {item.github} target="_blank"><button>Github</button></a>
+                <a href={item.livedemo} target="_blank"><button>Demo</button></a>
             </div>
         </div>
     })

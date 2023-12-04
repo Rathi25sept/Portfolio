@@ -4,14 +4,7 @@ import './App.css';
 
 function Contact() {
     const form = useRef();
-
-    // function handleClick() {
-    //     swal("Welcome!", "Message successfull", "success");
-    //   }
-    
   
-  
-
     const sendEmail = (e) => {
         e.preventDefault();
         swal("Welcome!", "Message successfull", "success");
