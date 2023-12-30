@@ -25,9 +25,8 @@ function Navbar() {
                         <li><Link to='Skills' smooth={true} spy={true}>Skills</Link></li>
                         {/* <span><Link to='Contacts' smooth={true} spy={true}>Contact</Link></span> */}
                     </ul>
+                    <div><button className='contactBtn'><Link to='Contacts' smooth={true} spy={true}>Contact</Link></button></div>
                 </div>
-
-                <div><button className='contactBtn'><Link to='Contacts' smooth={true} spy={true}>Contact</Link></button></div>
 
                 <div className="menu-icon" onClick={handleShowNavbar}>
                  <FaBars />

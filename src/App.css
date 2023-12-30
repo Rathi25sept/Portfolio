@@ -386,6 +386,7 @@
   }
   .about .imgBox {
     height: 25rem;
+    margin-top: 60px;
   }
   .imgBox img {
     margin-bottom: 15rem;
@@ -499,15 +500,18 @@
     background: #fff;
     box-shadow: 0 0 .5rem .2rem rgba(0,0,0,.15);
     width: 0px;
-    height: 250px;
+    height: 300px;
     transition: all 0.3s ease-in;
     overflow: hidden;
     z-index: 1;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .nav-elements.active {
-    width: 200px;
+    width: 100%;
   }
   
   .nav-elements ul {
@@ -525,6 +529,9 @@
   .nav-elements ul li a {
       color: var(--orange);
       font-size: 25px;
+  }
+  .contactBtn {
+    margin-top: 20px;
   }
 
 }
